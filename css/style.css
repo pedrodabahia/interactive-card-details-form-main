@@ -14,6 +14,7 @@ html,body{
     background-image: URL('../images/bg-main-desktop.png');
     background-repeat: no-repeat;
     background-size: 35% 100%;
+    overflow: hidden;
 }
 
 /*INICIO DA ESTILIZAÇÃO DO FORM*/
@@ -222,7 +223,15 @@ span{
     position: absolute;
 }
 
-/*HOME DA ESTILIZAÇÃO DA MENSAGEM DE CONFIRMAÇÃO*/
+.attribution{
+    margin: 0 35%;
+    float: inline-end;
+    margin-top: 7vw;
+    width: 30vw;
+    height: 10%;
+}
+
+/*FIM DA ESTILIZAÇÃO DA MENSAGEM DE CONFIRMAÇÃO*/
 
 /*INICIO DA ESTILIZAÇÃO MOBILE*/
 @media screen and (max-width:600px){
@@ -251,7 +260,7 @@ span{
 
     section.state-start .card-verse{
         margin-top: 10%;
-        margin-left: 16vw;
+        margin-left: 25vw;
         background-size: 100% 100%;
     }
 
@@ -347,7 +356,7 @@ span{
     }
     .attribution{
         margin: 0 35%;
-        width: 30%;
+        width: 30vw;
         height: 10%;
     }
 }
