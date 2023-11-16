@@ -182,6 +182,7 @@ section.state-start .label-card-verse{
     margin-top: 15%;
     display: none;
     text-align: center;
+    user-select: none;
 }
 .complate-state #circle-complet{
     width: 6vw;
@@ -234,6 +235,7 @@ span{
     }
     form.formulario-card{
         float: none;
+        display: block;
     }
     section.state-start .card-front,section.state-start .card-verse{
         background-color: transparent;
@@ -258,7 +260,7 @@ span{
     form.formulario-card{
         width:90%;
         float: none;
-        margin-right: 7%;
+        margin:3%;
         margin-top: 10%;
     }
     form.formulario-card .input-form input,form.formulario-card .input-form label,form.formulario-card .input-form button{
@@ -315,4 +317,37 @@ span{
         font-size: 3vw;
     }
 
+    .complate-state{
+        /*background-color: grey;*/
+        height: auto;
+        width:90%;
+        margin-right: 5%;
+        margin-top: 5%;
+
+    }
+    .complate-state #circle-complet{
+        width: 18vw;
+        height:  18vw;
+    }
+    .complate-state h1{
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
+    .complate-state h2{
+        color: grey;
+        font-size: 4vw;
+        margin-bottom: 8vw;
+    }
+    .complate-state button{
+        width: 80vw;
+        height: 12vw;
+        border-radius: 10px;
+        font-size: 3vw;
+        margin-bottom: 18vw;
+    }
+    .attribution{
+        margin: 0 35%;
+        width: 30%;
+        height: 10%;
+    }
 }

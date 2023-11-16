@@ -38,7 +38,7 @@ $(document).ready(function(){
           borderRed()
           
 
-        }else  if($('#input-date-mes').val() > 12 || $('#input-date-ano').val() < 22 && $('#input-namber').val().length <= 18){
+        }else  if($('#input-date-mes').val() > 12 && $('#input-date-ano').val() < 22 && $('#input-namber').val().length < 18){
 
           $('span.aviso-data').show();
           $('#input-date-mes').css('border-color','red');
@@ -47,7 +47,7 @@ $(document).ready(function(){
           $('#input-namber').css('border-color','red');
           e.preventDefault();
        
-        }else if($('#input-date-mes').val() > 12 || $('#input-date-ano').val() < 22 && $('#input-namber').val().length == 19){
+        }else if($('#input-date-mes').val() > 12 && $('#input-date-ano').val() < 22 && $('#input-namber').val().length == 19){
           $('#input-namber').css('border-color','rgb(119, 110, 124)');
           $('span.aviso-namber').hide();
           $('span.aviso-data').show();
@@ -55,7 +55,23 @@ $(document).ready(function(){
           $('#input-date-ano').css('border-color','red');
           e.preventDefault();
        
-        }else if($('#input-namber').val().length <= 18 ){
+        }else if($('#input-date-mes').val() > 12 && $('#input-date-ano').val() > 22 && $('#input-namber').val().length == 19){
+          $('#input-namber').css('border-color','rgb(119, 110, 124)');
+          $('span.aviso-namber').hide();
+          $('span.aviso-data').show();
+          $('#input-date-mes').css('border-color','red');
+          $('#input-date-ano').css('border-color','rgb(119, 110, 124)');
+          e.preventDefault();
+       
+        }else if($('#input-date-mes').val() < 12 && $('#input-date-ano').val() < 22 && $('#input-namber').val().length == 19){
+          $('#input-namber').css('border-color','rgb(119, 110, 124)');
+          $('span.aviso-namber').hide();
+          $('span.aviso-data').show();
+          $('#input-date-mes').css('border-color','rgb(119, 110, 124)');
+          $('#input-date-ano').css('border-color','red');
+          e.preventDefault();
+       
+        }else  if($('#input-namber').val().length <= 18 ){
           $('span.aviso-data').hide();
           $('#input-date-mes').css('border-color','rgb(119, 110, 124)');
           $('#input-date-ano').css('border-color','rgb(119, 110, 124)');
