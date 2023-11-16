@@ -21,7 +21,7 @@ $(document).ready(function(){
   }
 
    mascaraInputNamber()  
-    
+    //formata o input namber quando o usuario começa a digitar
     $("#btn-form").click(function(e){
        
         var name = $('#input-name').val()
@@ -33,13 +33,10 @@ $(document).ready(function(){
         
 
 
-        if(name == '' || numero == '' || dataMes == '' || dataAno == '' || cvc == ''){
-          
-          borderRed()
-          
-
-        }else  if($('#input-date-mes').val() > 12 && $('#input-date-ano').val() <= 22 && $('#input-namber').val().length <= 18){
-
+if(name == '' || numero == '' || dataMes == '' || dataAno == '' || cvc == ''){
+  borderRed()
+  
+  }else  if($('#input-date-mes').val() > 12 && $('#input-date-ano').val() <= 22 && $('#input-namber').val().length <= 18){
           $('span.aviso-data').show();
           $('#input-date-mes').css('border-color','red');
           $('#input-date-ano').css('border-color','red');
@@ -109,8 +106,9 @@ $(document).ready(function(){
     });
 
     $('#btnOpen').click(() => {
+      //recarrega a pagina
         $('.complate-state').hide();
-        location.reload()
+        location.reload();
 
     })
 
